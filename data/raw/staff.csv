@@ -1,0 +1,6 @@
+staff_id,name,role,phone,hire_date,status
+S001,May,Barista,080-555-1234,2023-08-01,Active
+S002,Bob,Chef,089-666-2222,2022-10-15,Active
+S003,Gift,Cashier,085-777-3333,2024-05-20,Active
+S004,Poom,Owner,089-999-0000,2023-07-01,Active
+S005,June,Waitress,081-444-5678,2024-03-10,Active

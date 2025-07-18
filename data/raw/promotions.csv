@@ -1,0 +1,6 @@
+promo_id,promo_name,start_date,end_date,description,is_active
+PR01,Duck Buddy Combo,2025-07-01,2025-07-31,"Buy large coffee, get free duck snack",1
+PR02,Heatwave Relief Set,2025-07-01,2025-07-31,"Cold drink + pastry 10% off 2nd drink",1
+PR03,Bread Addiction Card,2025-07-01,2025-07-31,"Buy bread 3 times get 4th free",1
+PR04,Fishy Business Bonus,2025-07-01,2025-07-31,"Savory meal unlocks 50% off fish food",1
+PR05,Back to School Cool,2025-08-01,2025-08-31,"Student ID gets 15% off iced coffees",0

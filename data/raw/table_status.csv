@@ -1,0 +1,6 @@
+table_id,table_number,seats,location,status
+T01,1,4,Indoor,Available
+T02,2,2,Indoor,Occupied
+T03,3,6,Outdoor,Reserved
+T04,4,2,Outdoor,Available
+T05,5,8,Outdoor,Available
