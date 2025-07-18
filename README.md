@@ -108,7 +108,6 @@ uv pip install -r requirements.txt
 
 * Place your knowledge base (RAG documents) in `/knowledge-base`
 * Place your sample DB as `/data/database.db` (or as configured)
-* Place images in `/image/`
 * **Get a Gemini API Key**: [https://makersuite.google.com/app/apikey](https://makersuite.google.com/app/apikey) (for Google Generative AI access)
 
 ### 4. Run the Demo App
