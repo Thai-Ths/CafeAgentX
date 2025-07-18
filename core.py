@@ -62,7 +62,7 @@ def make_agents(api_key: str):
         for a in state["assigned_agents"]:
             if a["agent"] == "landscape_cafe_bot":
                 a["result"] = response.get("result", "")
-        log = f"{response.get("logs", "")}"
+        log = f"{response.get('logs', '')}"
         return {"logs": [log]}
     
     def coffee_db_agent(state: dict) -> dict:
@@ -76,7 +76,7 @@ def make_agents(api_key: str):
         for a in state["assigned_agents"]:
             if a["agent"] == "coffee_db_agent":
                 a["result"] = response.get("result", "")
-        log = f"{response.get("logs", "")}"
+        log = f"{response.get('logs', '')}"
         return {"logs": [log]}
     
     def aggregator_node(state: dict) -> dict:
@@ -124,49 +124,40 @@ def build_workflow(intake_node, landscape_cafe_bot, coffee_db_agent, aggregator_
 
 # ──────────────── GRADIO UI ────────────────
 
-def chat(user_message: str, history: List[Dict[str, str]] = None, api_key: str = None) -> tuple:
-    if not api_key or not api_key.startswith("AI"):  # เช็คว่า api_key น่าจะถูก
-        return history or [], "⚠️ Please enter a valid Gemini API Key."
-    if not user_message.strip():
-        return history or [], "⚠️ Please fill in the message."
+def chat(user_message: str, history: list = None, api_key: str = None) -> tuple:
+    try:
+        if not api_key or not api_key.startswith("AI"):
+            return history or [], "⚠️ Please enter a valid Gemini API Key."
+        if not user_message.strip():
+            return history or [], "⚠️ Please fill in the message."
 
-    agents = make_agents(api_key=api_key)
-
-    workflow = build_workflow(
-        agents["intake_node"],
-        agents["landscape_cafe_bot"],
-        agents["coffee_db_agent"],
-        agents["aggregator_node"]
-    )
-
-    # Default system prompt และ allowed_agents (ควรปรับเองตาม context จริง)
-    allowed_agents = list(ALLOWED_AGENTS.keys())
-
-    # จัดรูปแบบ chat_history ตาม state ใหม่ (append แบบ list ของ dict)
-    chat_history = history.copy() if history else []
-
-    # Prepare state ตาม SupportFlowXState structure
-    state = {
-        "user_message": user_message,
-        "chat_history": chat_history,
-        "allowed_agents": allowed_agents,
-        "assigned_agents": [],
-        "final_response": "",
-        "logs": []
-    }
-
-    # เรียก workflow (เช่น LangGraph)
-    result = workflow.invoke(state)
-
-    # Get bot reply
-    bot_reply = result.get("final_response") or "ขออภัย ฉันไม่เข้าใจคำถาม กรุณาลองใหม่อีกครั้ง"
-    logs = "\n".join(result.get("logs", []))
-
-    # Append user และ assistant message ไปที่ history (แบบใหม่)
-    history.append({"role": "user", "content": user_message})
-    history.append({"role": "assistant", "content": bot_reply})
-
-    return history, logs
+        agents = make_agents(api_key=api_key)
+        workflow = build_workflow(
+            agents["intake_node"],
+            agents["landscape_cafe_bot"],
+            agents["coffee_db_agent"],
+            agents["aggregator_node"]
+        )
+        allowed_agents = list(ALLOWED_AGENTS.keys())
+        chat_history = history.copy() if history else []
+        state = {
+            "user_message": user_message,
+            "chat_history": chat_history,
+            "allowed_agents": allowed_agents,
+            "assigned_agents": [],
+            "final_response": "",
+            "logs": []
+        }
+        result = workflow.invoke(state)
+        bot_reply = (result.get("final_response") or "ขออภัย ฉันไม่เข้าใจคำถาม กรุณาลองใหม่อีกครั้ง")
+        logs = "\n".join(result.get("logs", []))
+        history.append({"role": "user", "content": user_message})
+        history.append({"role": "assistant", "content": bot_reply})
+        # จำกัด history ไม่เกิน 20 ข้อความล่าสุด
+        history = history[-20:]
+        return history, logs
+    except Exception as e:
+        return history or [], f"❌ Internal error: {str(e)[:500]}"
 
 def clear_chat():
     return [], ""
@@ -315,3 +306,4 @@ def create_demo():
 if __name__ == "__main__":
     demo = create_demo()
     demo.launch(debug=True)
+    
