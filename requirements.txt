@@ -1,0 +1,14 @@
+gradio
+langgraph
+typing-extensions
+operator
+langchain-google-genai
+pillow
+chromadb
+sentence-transformers
+PyPDF2
+pymupdf
+langchain-text-splitters
+python-dotenv
+pandas
+sqlite3 

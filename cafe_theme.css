@@ -1,0 +1,244 @@
+/* Global styles */
+.gradio-container {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Main container with cafe background */
+.main-container {
+    background: linear-gradient(rgba(255,255,255,0.95), rgba(255,255,255,0.95));
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    margin: 20px;
+    padding: 30px;
+    backdrop-filter: blur(10px);
+}
+
+/* Remove ALL chat borders and lines */
+.chatbot .message {
+    border: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom: none !important;
+    border-top: none !important;
+}
+
+.chatbot .message-wrap {
+    border: none !important;
+    border-left: none !important;
+    border-bottom: none !important;
+    border-top: none !important;
+}
+
+.chatbot .message-row {
+    border: none !important;
+    border-left: none !important;
+    border-bottom: none !important;
+    border-top: none !important;
+}
+
+/* Remove any borders from all chat elements */
+.chatbot * {
+    border-left: none !important;
+    border-bottom: none !important;
+    border-top: none !important;
+    border-right: none !important;
+}
+
+/* Specific targeting for gradio chat elements */
+.chatbot .user, .chatbot .bot {
+    border-left: none !important;
+    border: none !important;
+    border-bottom: none !important;
+}
+
+.chatbot .message-bubble-border {
+    border-left: none !important;
+    border-bottom: none !important;
+}
+
+.chatbot .prose {
+    border-left: none !important;
+    border-bottom: none !important;
+}
+
+/* Remove any divider lines between messages */
+.chatbot .message + .message {
+    border-top: none !important;
+}
+
+/* Hide avatar images that don't load */
+.chatbot .avatar {
+    display: none !important;
+}
+
+/* Header styling */
+.header-title {
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Chat area styling */
+.chat-container {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    border: 2px solid #e9ecef;
+}
+
+/* Chatbot styling */
+.chatbot {
+    background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
+    border-radius: 15px;
+    border: 2px solid #dee2e6;
+    box-shadow: inset 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* Input styling */
+.input-area {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border: 2px solid #e9ecef;
+}
+
+/* Button styling */
+.send-button {
+    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    padding: 12px 25px;
+    box-shadow: 0 4px 15px rgba(255,107,107,0.3);
+    transition: all 0.3s ease;
+}
+
+.send-button:hover {
+    background: linear-gradient(135deg, #ee5a6f 0%, #ff6b6b 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255,107,107,0.4);
+}
+
+.clear-button {
+    background: linear-gradient(135deg, #6c757d 0%, #5a6268 100%);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    padding: 12px 25px;
+    box-shadow: 0 4px 15px rgba(108,117,125,0.3);
+    transition: all 0.3s ease;
+}
+
+.clear-button:hover {
+    background: linear-gradient(135deg, #5a6268 0%, #6c757d 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(108,117,125,0.4);
+}
+
+/* Examples styling */
+.examples-container {
+    background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%);
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 15px rgba(78,205,196,0.3);
+}
+
+.examples-title {
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+/* Sidebar styling */
+.sidebar {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    color: white;
+}
+
+.api-key-container * {
+border-left: none !important;
+border-bottom: none !important;
+border-top: none !important;
+border-right: none !important;
+}
+
+.api-key-container .textbox {
+    border: none !important;
+}
+
+.api-key-container .info {
+    border: none !important;
+    border-left: none !important;
+}
+
+.log-container {
+    background: rgba(255,255,255,0.1);
+    border-radius: 15px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+/* Card hover effects */
+.card-hover {
+    transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .main-container {
+        margin: 10px;
+        padding: 20px;
+    }
+    
+    .header-title {
+        font-size: 2em;
+    }
+}
+
+/* Animation keyframes */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Cafe theme colors */
+:root {
+    --cafe-primary: #8B4513;
+    --cafe-secondary: #D2691E;
+    --cafe-accent: #F4A460;
+    --cafe-light: #FFF8DC;
+    --cafe-dark: #654321;
+}
