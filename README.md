@@ -51,20 +51,24 @@ The core logic is in `core.py`, which handles orchestration and routing between 
 <details>
 <summary><b>Click to view directory structure</b></summary>
 
-├── data/ # Contains RAG vector DB, database.db, and setup scripts
-├── image/ # Images for Gradio UI
-├── knowledge-base/ # RAG source documents
-├── landscape_cafe/ # Example subdirectory (optional: ignore if not used for runtime)
-├── AG00_intake_agent.py
-├── AG01_cafe_bot.py
-├── AG02_database_agent.py
-├── AG03_aggregator_agent.py
-├── core.py # Main orchestration entrypoint
-├── config.py # Central agent configuration
-├── cafe_theme.css # Custom Gradio theme
+```
+.
+├── data/                      # Contains database.db, and setup scripts
+├── image/                     # Images for Gradio UI
+├── knowledge-base/            # RAG source documents, and setup scripts
+├── landscape\_cafe/           # RAG database
+├── AG00\_intake\_agent.py
+├── AG01\_cafe\_bot.py
+├── AG02\_database\_agent.py
+├── AG03\_aggregator\_agent.py
+├── core.py                    # Main orchestration entrypoint
+├── config.py                  # Central configuration
+├── cafe\_theme.css            # Custom Gradio theme
 ├── requirements.txt
 ├── README.md
 ├── demo.ipynb
+
+```
 
 </details>
 
