@@ -23,7 +23,7 @@ By orchestrating tasks between specialized agents, SupportFlowX minimizes bottle
 - **Production-Ready Demo:** Café Assistant (CafeAgentX) demonstrates end-to-end deployment.
 - **Gradio UI:** Easy, ready-to-use chat interface for fast prototyping or real-world service.
 
-![Workflow](https://github.com/user-attachments/assets/9cb92dc7-0b54-4447-8fcc-0b29aaccc323)
+![Workflow](<img width="446" height="456" alt="image" src="https://github.com/user-attachments/assets/5ca6e952-3bbd-44bc-ba10-2573fe7261bc" />)
 </details>
 
 ---
