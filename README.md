@@ -69,7 +69,8 @@ The core logic is in `core.py`, which handles orchestration and routing between 
 ├── AG03_aggregator_agent.py
 ├── core.py                    # Main orchestration entrypoint
 ├── config.py                  # Central configuration
-├── cafe\_theme.css             # Custom Gradio theme
+├── cafe_theme.css             # Custom Gradio theme
+├── RAG.py 
 ├── requirements.txt
 ├── README.md
 ├── demo.ipynb
