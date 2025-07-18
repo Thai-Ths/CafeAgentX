@@ -161,7 +161,6 @@ CafeAgentX is a demo café assistant built with SupportFlowX, featuring:
 
 ## 🔒 License
 
-```
 Copyright (c) 2024 Thai
 
 This project ("SupportFlowX" and all included examples such as "CafeAgentX") is released for **educational, research, or internal evaluation purposes only**.
@@ -172,7 +171,6 @@ This project ("SupportFlowX" and all included examples such as "CafeAgentX") is 
 - For any public deployment, commercial use, or redistribution, please contact the author for explicit written permission.
 
 All rights reserved.
-```
 
 ## ⭐ Credits
 
