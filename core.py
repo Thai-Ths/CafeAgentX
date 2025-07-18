@@ -233,7 +233,7 @@ def create_demo():
                     gr.HTML('<div class="examples-title">💡 Quick Questions</div>')
                     gr.Examples(
                         examples=[
-                            "Location and parking lots?"
+                            "Location and parking lots?",
                             "เวลาเปิดปิดร้าน",
                             "โปรโมชั่นประจำเดือน", 
                             "ขอรายการสินค้าที่มีพร้อมราคา",
@@ -306,4 +306,3 @@ def create_demo():
 if __name__ == "__main__":
     demo = create_demo()
     demo.launch(debug=True)
-    
