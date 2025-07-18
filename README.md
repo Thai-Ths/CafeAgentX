@@ -43,13 +43,28 @@ SupportFlowX is not limited to cafés!
 
 ## 🏗️ Architecture
 
-- **IntakeAgent**: Entry point, receives user input, and decides which agents to route tasks to.
-- **Domain Agents**: (e.g., CafeBot, DatabaseAgent) Handle knowledge retrieval, database operations, or external service calls.
-- **AggregatorAgent**: (Optional) Merges or post-processes multi-agent outputs.
-- **Orchestration Engine**: Built on LangGraph StateGraph, flexibly routes requests per business logic.
+The core logic is in `core.py`, which handles orchestration and routing between specialized agents.
+- All main configuration is in `config.py`.
+- Database files for both structured data and RAG are inside `data/` and `knowledge-base/`.
+- Each agent is modular and extensible (see `AG00_*`, `AG01_*`, ...).
 
 <details>
 <summary><b>Click to view directory structure</b></summary>
+
+├── data/ # Contains RAG vector DB, database.db, and setup scripts
+├── image/ # Images for Gradio UI
+├── knowledge-base/ # RAG source documents
+├── landscape_cafe/ # Example subdirectory (optional: ignore if not used for runtime)
+├── AG00_intake_agent.py
+├── AG01_cafe_bot.py
+├── AG02_database_agent.py
+├── AG03_aggregator_agent.py
+├── core.py # Main orchestration entrypoint
+├── config.py # Central agent configuration
+├── cafe_theme.css # Custom Gradio theme
+├── requirements.txt
+├── README.md
+├── demo.ipynb
 
 </details>
 
