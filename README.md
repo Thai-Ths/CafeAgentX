@@ -1,7 +1,7 @@
 # SupportFlowX 🚀  
 *Agent Orchestration Framework for Scalable, Modular Chatbots*
 
-[**🌐 Try the CafeAgentX Demo on Hugging Face Spaces →**](https://huggingface.co/spaces/LKTs/CafeAgentX)
+[**🌐 Try the CafeAgentX on Hugging Face Spaces**](https://huggingface.co/spaces/LKTs/CafeAgentX)
 
 > **Example Project:** CafeAgentX ☕ – Café Assistant Demo
 
