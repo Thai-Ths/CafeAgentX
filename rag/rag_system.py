@@ -19,8 +19,8 @@ class RAGSystem:
         self,
         knowledge_base_path: str = None,
         collection_name: str = None,
-        chunk_size: int = 500,
-        chunk_overlap: int = 100,
+        chunk_size: int = 1000,
+        chunk_overlap: int = 200,
         db_path: str = None,
         embedding_model_name: str = None
     ):
