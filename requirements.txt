@@ -1,0 +1,12 @@
+gradio
+pillow>=9.0
+langgraph
+typing-extensions
+langchain-google-genai
+chromadb
+sentence-transformers
+PyPDF2
+pymupdf
+langchain-text-splitters
+pandas
+pydantic==2.10.6

@@ -1,0 +1,7 @@
+customer_id,first_name,last_name,email,phone,registration_date,member_level,notes
+C001,Nina,Quirk,ninaq@email.com,081-123-4567,2023-09-15,Gold,"Loves bread, ducks, and special drinks"
+C002,Pat,Prank,pat@email.com,082-222-9876,2024-02-11,Silver,"Always asks about secret menu"
+C003,Ray,Rebel,ray@email.com,083-765-4321,2024-11-30,Bronze,"Prefers outdoor seating, loves coffee"
+C004,Jen,Gizmo,jen@email.com,086-666-1111,2025-01-20,Gold,"Brings family on weekends"
+C005,Lynn,Loop,lynn@email.com,084-808-8080,2023-12-07,Silver,"Feeds ducks every visit"
+C006,Poom,Owner,poom@landscapecafe.com,089-999-0000,2023-07-01,Owner,"The owner – always on site, loves ducks, knows every customer"

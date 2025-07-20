@@ -1,0 +1,16 @@
+product_id,product_name,category,price,description,is_active
+P001,Americano,Drink,60,"Classic hot or iced black coffee",1
+P002,Butterfly Pea Latte,Drink,80,"Signature blue latte with floral notes",1
+P003,Iced Thai Tea,Drink,65,"Sweet and creamy, traditional Thai tea",1
+P004,Matcha Latte,Drink,75,"Japanese green tea latte, rich and smooth",1
+P005,Sparkling Lemon Soda,Drink,70,"Homemade lemon soda with bubbles",1
+P006,Spicy Grilled Fish Fillet,Food,150,"Charcoal-grilled local fish with Thai herbs and spicy dip",1
+P007,Crispy Duck Confit,Food,190,"Slow-cooked duck leg, crispy skin, served with orange sauce",1
+P008,Carbonara Pasta,Food,120,"Creamy pasta with bacon and parmesan",1
+P009,Caesar Salad,Food,95,"Fresh romaine, croutons, grilled chicken, Caesar dressing",1
+P010,Tom Yum Spaghetti,Food,130,"Fusion of Italian spaghetti and Thai tom yum flavors",1
+P011,Warm Bread Basket,Bakery,90,"Freshly baked bread served with homemade butter",1
+P012,Lemon Cheesecake,Bakery,95,"Tangy, creamy cheesecake with lemon zest",1
+P013,Matcha Roll,Bakery,85,"Soft roll cake with matcha cream filling",1
+P014,Chocolate Croissant,Bakery,55,"Flaky croissant filled with rich chocolate",1
+P015,Classic Brownie,Bakery,60,"Dense chocolate brownie with walnut topping",1

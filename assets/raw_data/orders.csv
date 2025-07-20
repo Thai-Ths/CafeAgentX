@@ -1,0 +1,7 @@
+order_id,customer_id,order_datetime,total_amount,order_status,notes
+O1001,C001,2025-07-18 09:30,230,Completed,"Had breakfast with coffee and bakery"
+O1002,C002,2025-07-18 11:45,185,Completed,"Lunch with signature latte and dessert"
+O1003,C004,2025-07-19 10:12,335,Completed,"Family visit, bakery & main dishes"
+O1004,C003,2025-07-20 16:30,150,Completed,"Late lunch with fish dish and coffee"
+O1005,C005,2025-07-21 14:55,85,Completed,"Only drinks and bakery"
+O1006,C006,2025-07-21 17:05,250,Completed,"Owner's dinner meeting"

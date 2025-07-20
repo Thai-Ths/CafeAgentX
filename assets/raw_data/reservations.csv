@@ -1,0 +1,4 @@
+reservation_id,customer_id,table_id,reservation_datetime,status,notes
+R1001,C004,T03,2025-07-19 09:30,Confirmed,"Family reservation, 6 seats"
+R1002,C002,T02,2025-07-18 11:30,Completed,"Lunch, preferred near window"
+R1003,C006,T05,2025-07-21 16:30,Confirmed,"Owner's group, big table"
