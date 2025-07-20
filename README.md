@@ -58,13 +58,13 @@ The core logic is in `core.py`, which handles orchestration and routing between 
 
 ```
 
-- `agents/`         — Agent logic and wrappers
-- `assets/`         — Images, knowledge base, raw data
-- `config/`         — Configuration and agent registry
-- `database/`       — SQLite DB and scripts
-- `rag/`            — RAG system and embeddings
-- `ui/`             — Gradio UI and themes
-- `workflows/`      — Workflow graph and routing
+- agents/         — Agent logic and wrappers
+- assets/         — Images, knowledge base, raw data
+- config/         — Configuration and agent registry
+- database/       — SQLite DB and scripts
+- rag/            — RAG system and embeddings
+- ui/             — Gradio UI and themes
+- workflows/      — Workflow graph and routing
 
 ```
 
