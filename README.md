@@ -28,10 +28,6 @@ By orchestrating tasks between specialized agents, SupportFlowX minimizes bottle
 - **Production-Ready Demo:** Café Assistant (CafeAgentX) demonstrates end-to-end deployment.
 - **Gradio UI:** Easy, ready-to-use chat interface for fast prototyping or real-world service.
 
-<img width="446" height="456" alt="image" src="https://github.com/user-attachments/assets/cb515f28-4cbd-4c50-8914-ea4855324050" />
-
-</details>
-
 ---
 
 ## 💡 Use Cases
@@ -128,7 +124,7 @@ CafeAgentX is a demo café assistant built with SupportFlowX, featuring:
 * Realistic, extensible agent collaboration (IntakeAgent → CafeBot & DBAgent → Aggregator → Response)
 
 > **Workflow Diagram:**
-> *(See attached diagram / image in repo for orchestration flow)*
+> <img width="446" height="456" alt="image" src="https://github.com/user-attachments/assets/cb515f28-4cbd-4c50-8914-ea4855324050" />
 
 ---
 
