@@ -4,7 +4,6 @@
 [**🌐 Try CafeAgentX on Hugging Face Spaces**](https://huggingface.co/spaces/LKTs/CafeAgentX)
 
 > **Example Project:** CafeAgentX ☕ – Café Assistant Demo
-
 <img width="1278" height="854" alt="image" src="https://github.com/user-attachments/assets/c215c19d-da07-4b50-b961-14a1eed8c607" />
 
 
@@ -74,7 +73,7 @@ main.py      - Application entry point
 ```bash
 git clone https://github.com/Thai-Ths/SupportFlowX.git
 cd supportflowx
-````
+```
 
 ### 2. Install dependencies
 
@@ -112,7 +111,6 @@ python main.py
 ```
 
 Then open the local Gradio UI in your browser!
-
 ---
 
 ## 🛠️ Customization & Scaling
