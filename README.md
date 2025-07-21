@@ -1,7 +1,7 @@
 # SupportFlowX 🚀  
-*Agent Orchestration Framework for Scalable, Modular Chatbots*
+*Multi-Agent Orchestration Framework for Scalable Chatbots*
 
-[**🌐 Try the CafeAgentX on Hugging Face Spaces**](https://huggingface.co/spaces/LKTs/CafeAgentX)
+[**🌐 Try CafeAgentX on Hugging Face Spaces**](https://huggingface.co/spaces/LKTs/CafeAgentX)
 
 > **Example Project:** CafeAgentX ☕ – Café Assistant Demo
 
@@ -49,22 +49,23 @@ SupportFlowX is not limited to cafés!
 
 ## 🏗️ Architecture
 
-The core logic is in `core.py`, which handles orchestration and routing between specialized agents.
-- All main configuration is in `config.py`.
-- Database files for both structured data and RAG are inside `data/` and `knowledge-base/`.
-- Each agent is modular and extensible (see `AG00_*`, `AG01_*`, ...).
+The main entry point is `main.py`, which builds the workflow and launches the chat UI.
+- Configuration lives in `config/`.
+- Database files are stored under `database/` and the knowledge base lives in `assets/knowledge_base/`.
+- Each agent is modular and extensible (see the files in `agents/`).
 
 ## Project Structure
 
 ```
 
-- agents/         — Agent logic and wrappers
-- assets/         — Images, knowledge base, raw data
-- config/         — Configuration and agent registry
-- database/       — SQLite DB and scripts
-- rag/            — RAG system and embeddings
-- ui/             — Gradio UI and themes
-- workflows/      — Workflow graph and routing
+agents/      - Agent logic and wrappers
+assets/      - Knowledge base and raw data
+config/      - Configuration files and agent registry
+database/    - SQLite DB and scripts
+rag/         - RAG system and embeddings
+ui/          - Gradio UI and static assets
+workflows/   - Workflow graph and state router
+main.py      - Application entry point
 
 ```
 
@@ -95,14 +96,14 @@ uv pip install -r requirements.txt
 
 ### 3. Prepare data & API key
 
-* Place your knowledge base (RAG documents) in `/knowledge-base`
-* Place your sample DB as `/data/database.db` (or as configured)
+* Place your knowledge base (RAG documents) in `assets/knowledge_base`
+* Place your sample DB as `database/database.db` (or as configured)
 * **Get a Gemini API Key**: [https://makersuite.google.com/app/apikey](https://makersuite.google.com/app/apikey) (for Google Generative AI access)
 
 ### 4. Run the Demo App
 
 ```bash
-python core.py
+python main.py
 ```
 
 Then open the local Gradio UI in your browser!
@@ -111,7 +112,7 @@ Then open the local Gradio UI in your browser!
 
 ## 🛠️ Customization & Scaling
 
-* **Add new skills:** Create new agent modules (see AGXX\_\*.py), import and register in `core.py`.
+* **Add new skills:** Create new agent modules in `agents/` and register them in `config/agent_registry.py`.
 * **Change business logic:** Tweak agent routing and orchestration logic as needed.
 * **Swap domains:** Replace Café agents and data with your own (e.g. legal, retail, travel, etc.)
 * **Production Deployment:** Wrap in FastAPI/ASGI and run with `uvicorn` for robust serving.
