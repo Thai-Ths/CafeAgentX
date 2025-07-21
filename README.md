@@ -72,7 +72,7 @@ main.py      - Application entry point
 
 ```bash
 git clone https://github.com/Thai-Ths/SupportFlowX.git
-cd supportflowx
+cd SupportFlowX
 ```
 
 ### 2. Install dependencies
