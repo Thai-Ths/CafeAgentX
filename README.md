@@ -96,7 +96,16 @@ uv pip install -r requirements.txt
 * Place your sample DB as `database/database.db` (or as configured)
 * **Get a Gemini API Key**: [https://makersuite.google.com/app/apikey](https://makersuite.google.com/app/apikey) (for Google Generative AI access)
 
-### 4. Run the Demo App
+### 4. Build knowledge base & database *(first run)*
+
+```bash
+python rag/rag_system.py       # embed docs into ChromaDB
+python database/create_db.py  # create/update `database.db`
+```
+
+Run these commands whenever you add new data.
+
+### 5. Run the Demo App
 
 ```bash
 python main.py
