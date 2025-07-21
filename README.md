@@ -12,7 +12,7 @@
 
 ## Overview
 
-**SupportFlowX** is a flexible, agentic orchestration framework designed to build scalable, multi-agent AI assistants.  
+**SupportFlowX** is a flexible, agentic orchestration framework—built on LangGraph—designed to build scalable, multi-agent AI assistants.  
 The core design enables easy integration, scaling, and replacement of domain-specific AI agents for any business scenario.  
 By orchestrating tasks between specialized agents, SupportFlowX minimizes bottlenecks and maximizes both reliability and maintainability.
 
