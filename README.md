@@ -124,7 +124,8 @@ CafeAgentX is a demo café assistant built with SupportFlowX, featuring:
 * Realistic, extensible agent collaboration (IntakeAgent → CafeBot & DBAgent → Aggregator → Response)
 
 > **Workflow Diagram:**
-> <img width="446" height="456" alt="image" src="https://github.com/user-attachments/assets/cb515f28-4cbd-4c50-8914-ea4855324050" />
+
+<img width="446" height="456" alt="image" src="https://github.com/user-attachments/assets/cb515f28-4cbd-4c50-8914-ea4855324050" />
 
 ---
 
