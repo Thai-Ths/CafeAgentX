@@ -72,7 +72,7 @@ main.py      - Application entry point
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/your-username/supportflowx.git
+git clone https://github.com/Thai-Ths/SupportFlowX.git
 cd supportflowx
 ````
 
