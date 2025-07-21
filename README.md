@@ -142,7 +142,6 @@ CafeAgentX is a demo café assistant built with SupportFlowX, featuring:
 * [gradio](https://gradio.app/)
 * [langgraph](https://github.com/langchain-ai/langgraph)
 * [typing-extensions](https://pypi.org/project/typing-extensions/)
-* [operator](https://docs.python.org/3/library/operator.html)
 * [langchain-google-genai](https://github.com/langchain-ai/langchain)
 * [pillow](https://python-pillow.org/)
 * [chromadb](https://www.trychroma.com/)
@@ -152,7 +151,6 @@ CafeAgentX is a demo café assistant built with SupportFlowX, featuring:
 * [langchain-text-splitters](https://python.langchain.com/docs/modules/data_connection/document_transformers/text_splitters/)
 * [python-dotenv](https://pypi.org/project/python-dotenv/)
 * [pandas](https://pandas.pydata.org/)
-* [sqlite3](https://docs.python.org/3/library/sqlite3.html)
 
 > All listed in `requirements.txt`
 
