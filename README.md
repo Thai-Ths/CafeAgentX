@@ -1,5 +1,5 @@
 # CafeAgentX ☕
-*LangChain-powered café chatbot with RAG, SQLite, and extensible agents*
+*LangGraph-powered café chatbot with RAG, SQLite, and extensible agents*
 
 [**🌐 Try CafeAgentX on Hugging Face Spaces**](https://huggingface.co/spaces/LKTs/CafeAgentX)
 
