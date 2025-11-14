@@ -11,8 +11,6 @@
 
 **CafeAgentX** is a ready-to-run café assistant built with LangChain and LangGraph. The assistant blends Retrieval-Augmented Generation (RAG), a structured SQLite database, and multiple specialized agents to deliver accurate answers about menus, promotions, and reservations.
 
-Unlike a generic “framework” pitch, this repository spotlights a concrete café chatbot implementation that you can clone and use right away. The underlying SupportFlowX scaffolding still powers the orchestration, so you can extend or repurpose it without starting from scratch.
-
 ---
 
 ## ✨ What CafeAgentX Delivers
